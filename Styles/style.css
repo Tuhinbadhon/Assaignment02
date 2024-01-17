@@ -99,7 +99,7 @@ nav li a {
   font-size: 16px;
   font-weight: 400;
 }
-.form {
+.banner-form {
   margin-top: 50px;
   width: auto;
   padding: 16px;
@@ -112,9 +112,11 @@ nav li a {
   gap: 20px;
 }
 
-.form input {
+.banner-form input {
   color: rgba(19, 19, 24, 0.5);
   padding: 16px;
+  border-radius: 8px;
+  background: #fff;
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
@@ -523,7 +525,7 @@ li {
 .newsletter-form {
   max-width: 400px;
   border-radius: 16px;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #32a70f;
 }
 
@@ -538,24 +540,30 @@ li {
 
 .form-border {
   border-bottom: 1px solid #32a70f;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-form {
+.newsletter-form-2 {
   display: flex;
   flex-direction: column;
 }
 
-label {
-  font-weight: bold;
+.newsletter-form-2 label {
   margin-bottom: 5px;
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
 }
 
-input {
-  padding: 10px;
-  margin-bottom: 15px;
+.newsletter-form-2 input {
+  padding: 16px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  border: 0;
 }
 
 button {
@@ -566,6 +574,9 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /* button:hover {
@@ -574,6 +585,22 @@ button {
 
 .newsletter-image {
   flex: 1;
+}
+.newsletter-form h2 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.newsletter-form p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
 }
 
 .newsletter-image img {
