@@ -97,38 +97,34 @@ nav li a {
   font-size: 16px;
   font-weight: 400;
 }
-
 .form {
   margin-top: 50px;
-  /* width: 800px;
-  height: 80px; */
   width: auto;
-
   padding: 16px;
   align-items: center;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
   border: 0 solid;
   display: flex;
+
   gap: 20px;
 }
 
-.form-input {
-  width: 174px;
-  height: 52px;
-  display: flex;
-  border: 0;
-  border-radius: 8px;
-  background: #fff;
-  padding: 16px;
+.form input {
   color: rgba(19, 19, 24, 0.5);
+  padding: 16px;
+  font-family: Mulish;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  justify-content: space-between;
+  line-height: normal;
+  width: 174px; /* Adjust the padding and margin */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding in width calculation */
+  border: 0;
 }
-
 .button-primary {
-  display: flex;
+  margin: 0;
   width: 174px;
   height: 52px;
   color: #fff;
@@ -139,10 +135,10 @@ nav li a {
   font-weight: 700;
   border-radius: 8px;
   background: #32a70f;
-  padding: 16px;
   border: 0;
   cursor: pointer;
   gap: 5px;
+  display: flex;
 }
 
 /* popular section */

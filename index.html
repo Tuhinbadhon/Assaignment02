@@ -53,56 +53,16 @@
           </p>
 
           <section class="form">
-            <button type="submit" class="form-input">
-              <div>
-                <span>Where Go</span>
-              </div>
-            </button>
-            <button type="submit" class="form-input">
-              <div>
-                <span>When</span>
-              </div>
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M19.5 8.25L12 15.75L4.5 8.25"
-                    stroke="#131318"
-                    stroke-opacity="0.7"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div></button
-            ><button type="submit" class="form-input">
-              <div>
-                <span>Select Type</span>
-              </div>
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M19.5 8.25L12 15.75L4.5 8.25"
-                    stroke="#131318"
-                    stroke-opacity="0.7"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
+            <input type="text" id="where" name="where" placeholder="Where go" />
+
+            <input list="browsers" name="browser " placeholder="When" />
+            <datalist id="browsers">
+              <option value="Tomorrow"></option>
+            </datalist>
+            <input list="browse" name="browser " placeholder="Select Type" />
+            <datalist id="browse">
+              <option value="Hulululu"></option>
+            </datalist>
             <button type="submit" class="button-primary">
               <div>
                 <svg
@@ -2048,6 +2008,7 @@
         </div>
       </section>
       <!-- newsletter section start -->
+
       <section class="newsletter-section">
         <div class="newsletter-form">
           <h2>Newsletter</h2>
@@ -2080,6 +2041,7 @@
           <img src="./Images/Rectangle 8 (1).png" alt="Newsletter Image" />
         </div>
       </section>
+      <!-- newsletter serction end -->
     </main>
     <footer>
       <div class="footer-container">
