@@ -123,6 +123,9 @@ nav li a {
   box-sizing: border-box; /* Include padding in width calculation */
   border: 0;
 }
+input:focus {
+  outline: none;
+}
 .button-primary {
   margin: 0;
   width: 174px;
