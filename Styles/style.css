@@ -38,10 +38,12 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-left {
+.nav-left a {
   display: flex;
   gap: 10px;
   align-items: center;
+  list-style: none;
+  text-decoration: none;
 }
 nav > ul {
   font-size: 18px;
@@ -588,13 +590,15 @@ button {
 
   background: rgba(19, 19, 24, 0.05);
 }
-.footer-image {
+.footer-image a {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 0;
+  list-style: none;
+  text-decoration: none;
 }
 .footer-image img {
   width: 50px;
