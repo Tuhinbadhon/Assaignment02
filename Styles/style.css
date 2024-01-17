@@ -685,3 +685,293 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
+.nav-toggle {
+  display: none; /* Initially hide the toggle button */
+}
+
+/* responsive part */
+@media screen and (max-width: 576px) {
+  main {
+    margin-left: 10px; /* Adjust for smaller screens */
+    margin-right: 10px; /* Adjust for smaller screens */
+  }
+
+  /* header section */
+
+  header {
+    margin-top: 20px; /* Adjust for smaller screens */
+    margin-left: 10px; /* Adjust for smaller screens */
+    margin-right: 10px; /* Adjust for smaller screens */
+  }
+
+  .all-title {
+    display: flex;
+    gap: 10px;
+    color: #131318;
+    font-size: 24px; /* Adjust for smaller screens */
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  nav img {
+    width: 40px; /* Adjust for smaller screens */
+    height: 45px; /* Adjust for smaller screens */
+  }
+
+  nav {
+    flex-direction: row; /* Change to column layout for smaller screens */
+    align-items: center;
+  }
+  .nav-left {
+    flex-direction: row; /* Align items in a row for smaller screens */
+    justify-content: space-between; /* Add space between the logo and the toggle button */
+  }
+
+  .nav-toggle {
+    display: block; /* Show the toggle button for smaller screens */
+    cursor: pointer;
+  }
+
+  .nav-right {
+    display: none; /* Hide the navigation links by default for smaller screens */
+    flex-direction: column; /* Align items in a column for smaller screens */
+    background: #f8f8f8; /* Add background color for the navigation links */
+    position: absolute;
+    top: 80px; /* Adjust the top position based on your design */
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-right.active {
+    display: flex; /* Show the navigation links when active (toggled) */
+  }
+
+  /* Adjust other styles for responsiveness */
+  nav img {
+    width: 40px;
+    height: 45px;
+  }
+  /* banner section */
+  .banner {
+    background-image: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8) 0%,
+        rgba(19, 19, 24, 0) 100%
+      ),
+      url("/Images/Group.png");
+    border-radius: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Change to cover for better responsiveness */
+    height: 100vh;
+    margin-top: 20px; /* Adjust for smaller screens */
+  }
+
+  .banner-greeting {
+    font-size: 36px; /* Adjust for smaller screens */
+  }
+
+  .banner-content p {
+    font-size: 14px; /* Adjust for smaller screens */
+  }
+
+  .banner-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Adjust for smaller screens */
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    gap: 10px; /* Adjust for smaller screens */
+  }
+
+  .banner-form input {
+    padding: 10px; /* Adjust for smaller screens */
+    font-size: 14px; /* Adjust for smaller screens */
+  }
+
+  .button-primary {
+    width: 100%; /* Make the button full width for smaller screens */
+    max-width: 200px; /* Set a maximum width for the button */
+  }
+  /* popular section */
+  .popular {
+    margin-top: 50px; /* Adjust margin for smaller screens */
+    flex-direction: column; /* Display items in a column for smaller screens */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .popular-terms {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+
+  .popular h3 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .popular p,
+  li {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 20px; /* Adjust line height for smaller screens */
+  }
+
+  .popular img {
+    width: 100%; /* Make the image responsive to the container width */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+  /* destination section */
+  .destination {
+    margin-top: 50px; /* Adjust margin for smaller screens */
+    display: grid;
+  }
+
+  .destination h3 {
+    color: #131318;
+    text-align: center;
+    font-size: 28px; /* Adjust font size for smaller screens */
+    font-weight: 800;
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .destination p {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    font-weight: 400;
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    grid-template-columns: 1fr; /* Change to 1 column for smaller screens */
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .place-name {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+    top: 50%; /* Adjust vertical position for smaller screens */
+  }
+
+  .row1 img,
+  .row2 img,
+  .row3 img {
+    border-radius: 16px;
+    max-width: 100%;
+    height: auto; /* Make the height auto for responsiveness */
+    object-fit: cover;
+  }
+  .Deals-section {
+    margin-top: 100px;
+  }
+
+  .Deals-section h3 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .Deals-section p {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Deals-images {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .Deals-images img {
+    max-width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  .image-hover {
+    position: absolute;
+    transform: translate(70%, -111%);
+    width: 500px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    padding: 30px;
+  }
+
+  .image-hover-2 {
+    position: absolute;
+    transform: translate(7%, -111%);
+    width: 500px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    padding: 30px;
+  }
+  .Malaysia-flex {
+    align-items: center;
+    display: flex;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .packages-container h3 {
+    font-size: 24px; /* Further reduce font size for smaller screens */
+  }
+
+  .packages-container p,
+  .packages-container ul li {
+    font-size: 14px; /* Maintain font size for smaller screens */
+  }
+
+  .packages-container button {
+    font-size: 16px; /* Maintain font size for smaller screens */
+  }
+
+  .place-name-2 {
+    font-size: 16px; /* Maintain font size for smaller screens */
+  }
+
+  .newsletter-form h2 {
+    font-size: 18px; /* Further reduce font size for smaller screens */
+  }
+
+  .newsletter-form p {
+    font-size: 14px; /* Maintain font size for smaller screens */
+    line-height: 20px; /* Maintain line height for smaller screens */
+  }
+
+  .newsletter-form-2 input {
+    font-size: 14px; /* Maintain font size for smaller screens */
+  }
+
+  .newsletter-form-2 label,
+  .newsletter-form-2 button {
+    font-size: 16px; /* Maintain font size for smaller screens */
+  }
+
+  .travel-section h4 {
+    font-size: 16px; /* Maintain font size for smaller screens */
+  }
+
+  .travel-section h3 {
+    font-size: 20px; /* Further reduce font size for smaller screens */
+  }
+}
