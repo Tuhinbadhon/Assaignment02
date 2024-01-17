@@ -579,9 +579,9 @@ button {
   font-weight: 800;
 }
 
-/* button:hover {
+button:hover {
   background-color: #2980b9;
-} */
+}
 
 .newsletter-image {
   flex: 1;
@@ -607,6 +607,40 @@ button {
   max-width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+/* .newsletter-image {
+  position: relative;
+} */
+.travel-section {
+  position: absolute;
+  transform: translate(90%, -135%) rotate(-19.628deg);
+  border-radius: 16px;
+  background: #32a70f;
+  width: 250px;
+  height: 100px;
+  padding: 20px;
+  justify-content: center;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.travel-section h4 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+.travel-section h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 
 /* footer section */
