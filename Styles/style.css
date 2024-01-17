@@ -122,9 +122,9 @@ nav li a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 174px; /* Adjust the padding and margin */
-  margin: 0; /* Remove default margin */
-  box-sizing: border-box; /* Include padding in width calculation */
+  width: 174px;
+  margin: 0;
+  box-sizing: border-box;
   border: 0;
 }
 input:focus {
@@ -688,66 +688,61 @@ hr {
 .nav-toggle {
   display: none; /* Initially hide the toggle button */
 }
-
-/* responsive part */
+/* ############################################################################################################ */
+/* ######################################                            ############################################# */
+/* *************************************        RESPONSIVE PART      ****************************************** */
+/* #####################################                              ########################################### */
+/* ############################################################################################################## */
 @media screen and (max-width: 576px) {
   main {
-    margin-left: 10px; /* Adjust for smaller screens */
-    margin-right: 10px; /* Adjust for smaller screens */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* header section */
 
   header {
-    margin-top: 20px; /* Adjust for smaller screens */
-    margin-left: 10px; /* Adjust for smaller screens */
-    margin-right: 10px; /* Adjust for smaller screens */
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .all-title {
     display: flex;
     gap: 10px;
-    color: #131318;
-    font-size: 24px; /* Adjust for smaller screens */
-    font-weight: 800;
-    font-style: normal;
-  }
 
-  nav img {
-    width: 40px; /* Adjust for smaller screens */
-    height: 45px; /* Adjust for smaller screens */
+    font-weight: 800;
+    font-style: n;
   }
 
   nav {
-    flex-direction: row; /* Change to column layout for smaller screens */
+    flex-direction: row;
     align-items: center;
   }
   .nav-left {
-    flex-direction: row; /* Align items in a row for smaller screens */
-    justify-content: space-between; /* Add space between the logo and the toggle button */
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-toggle {
-    display: block; /* Show the toggle button for smaller screens */
+    display: block;
     cursor: pointer;
   }
 
   .nav-right {
-    display: none; /* Hide the navigation links by default for smaller screens */
-    flex-direction: column; /* Align items in a column for smaller screens */
-    background: #f8f8f8; /* Add background color for the navigation links */
+    display: none;
+    flex-direction: column;
+    background: #f8f8f8;
     position: absolute;
-    top: 80px; /* Adjust the top position based on your design */
+    top: 80px;
     right: 0;
     width: 100%;
     text-align: center;
   }
 
   .nav-right.active {
-    display: flex; /* Show the navigation links when active (toggled) */
+    display: flex;
   }
-
-  /* Adjust other styles for responsiveness */
   nav img {
     width: 40px;
     height: 45px;
@@ -763,85 +758,86 @@ hr {
     border-radius: 16px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Change to cover for better responsiveness */
+    background-size: cover;
     height: 100vh;
-    margin-top: 20px; /* Adjust for smaller screens */
+    margin-top: 20px;
   }
 
   .banner-greeting {
-    font-size: 36px; /* Adjust for smaller screens */
+    font-size: 36px;
   }
 
   .banner-content p {
-    font-size: 14px; /* Adjust for smaller screens */
+    font-size: 14px;
   }
 
   .banner-form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px; /* Adjust for smaller screens */
+    margin-top: 20px;
     padding: 16px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.3);
-    gap: 10px; /* Adjust for smaller screens */
+    gap: 10px;
   }
 
   .banner-form input {
-    padding: 10px; /* Adjust for smaller screens */
-    font-size: 14px; /* Adjust for smaller screens */
+    padding: 10px;
+    font-size: 14px;
   }
 
   .button-primary {
-    width: 100%; /* Make the button full width for smaller screens */
-    max-width: 200px; /* Set a maximum width for the button */
+    width: 100%;
+    max-width: 200px;
   }
   /* popular section */
   .popular {
-    margin-top: 50px; /* Adjust margin for smaller screens */
-    flex-direction: column; /* Display items in a column for smaller screens */
-    gap: 20px; /* Adjust gap for smaller screens */
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .popular-terms {
-    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-right: 0;
   }
 
   .popular h3 {
-    font-size: 24px; /* Adjust font size for smaller screens */
-    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .popular p,
   li {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    line-height: 20px; /* Adjust line height for smaller screens */
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .popular img {
-    width: 100%; /* Make the image responsive to the container width */
-    margin-top: 10px; /* Adjust margin for smaller screens */
-    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   /* destination section */
   .destination {
-    margin-top: 50px; /* Adjust margin for smaller screens */
+    margin-top: 50px;
     display: grid;
+    grid-template-columns: 1fr;
   }
 
   .destination h3 {
     color: #131318;
     text-align: center;
-    font-size: 28px; /* Adjust font size for smaller screens */
+    font-size: 28px;
     font-weight: 800;
-    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    margin-bottom: 20px;
   }
 
   .destination p {
     color: rgba(19, 19, 24, 0.7);
     text-align: center;
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px;
     font-weight: 400;
-    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    margin-bottom: 20px;
   }
 
   .row1,
@@ -850,22 +846,26 @@ hr {
     display: grid;
     gap: 20px;
     margin-bottom: 20px;
+    grid-template-columns: 1fr;
   }
 
   .row1,
   .row2,
   .row3 {
-    grid-template-columns: 1fr; /* Change to 1 column for smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .image-container {
-    position: relative;
+    max-width: 100%;
+  }
+  .image-container img {
+    width: 360px;
   }
 
   .place-name {
-    font-size: 18px; /* Adjust font size for smaller screens */
-    padding: 8px; /* Adjust padding for smaller screens */
-    top: 50%; /* Adjust vertical position for smaller screens */
+    font-size: 18px;
+    padding: 8px;
+    top: 50%;
   }
 
   .row1 img,
@@ -873,7 +873,7 @@ hr {
   .row3 img {
     border-radius: 16px;
     max-width: 100%;
-    height: auto; /* Make the height auto for responsiveness */
+    max-height: 100%;
     object-fit: cover;
   }
   .Deals-section {
@@ -914,16 +914,6 @@ hr {
     padding: 30px;
   }
 
-  .image-hover-2 {
-    position: absolute;
-    transform: translate(7%, -111%);
-    width: 500px;
-    border-radius: 16px;
-    border: 2px solid #fff;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(2.5px);
-    padding: 30px;
-  }
   .Malaysia-flex {
     align-items: center;
     display: flex;
@@ -931,48 +921,68 @@ hr {
     font-size: 16px;
     font-weight: 400;
   }
+  .choose-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .pic-1 {
+    width: 315px;
+  }
+  .pic-2 {
+    width: 315px;
+  }
 
   .packages-container h3 {
-    font-size: 24px; /* Further reduce font size for smaller screens */
+    font-size: 24px;
   }
 
   .packages-container p,
   .packages-container ul li {
-    font-size: 14px; /* Maintain font size for smaller screens */
+    font-size: 14px;
+  }
+  .packages-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .packages-container button {
-    font-size: 16px; /* Maintain font size for smaller screens */
+    font-size: 16px;
   }
 
   .place-name-2 {
-    font-size: 16px; /* Maintain font size for smaller screens */
+    font-size: 16px;
   }
 
   .newsletter-form h2 {
-    font-size: 18px; /* Further reduce font size for smaller screens */
+    font-size: 18px;
   }
 
   .newsletter-form p {
-    font-size: 14px; /* Maintain font size for smaller screens */
-    line-height: 20px; /* Maintain line height for smaller screens */
+    font-size: 14px;
+    line-height: 20px;
   }
-
+  .newsletter-section {
+    display: flex;
+    flex-direction: column;
+  }
   .newsletter-form-2 input {
-    font-size: 14px; /* Maintain font size for smaller screens */
+    font-size: 14px;
   }
 
   .newsletter-form-2 label,
   .newsletter-form-2 button {
-    font-size: 16px; /* Maintain font size for smaller screens */
+    font-size: 16px;
   }
 
   .travel-section h4 {
-    font-size: 16px; /* Maintain font size for smaller screens */
+    font-size: 16px;
+  }
+  .travel-section {
+    display: none;
   }
 
   .travel-section h3 {
-    font-size: 20px; /* Further reduce font size for smaller screens */
+    font-size: 20px;
   }
   /* Footer section */
   .footer-container {
@@ -992,33 +1002,38 @@ hr {
     list-style: none;
     text-decoration: none;
   }
-
+  .image-hover {
+    display: none;
+  }
+  .image-hover-2 {
+    display: none;
+  }
   .footer-image img {
-    width: 40px; /* Adjusted width for smaller screens */
-    height: 45px; /* Adjusted height for smaller screens */
+    width: 40px;
+    height: 45px;
   }
 
   .footer-container p {
     color: #5a5a5d;
     text-align: center;
-    font-size: 14px; /* Adjusted font size for smaller screens */
+    font-size: 14px;
     font-weight: 400;
-    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+    margin-bottom: 20px;
   }
 
   .svg {
-    margin-bottom: 30px; /* Adjusted margin for smaller screens */
+    margin-bottom: 30px;
   }
 
   hr {
     background: rgba(19, 19, 24, 0.1);
-    margin-bottom: 30px; /* Adjusted margin for smaller screens */
+    margin-bottom: 30px;
   }
 
   .footer-p {
     color: #131318;
     font-family: Inter;
-    font-size: 14px; /* Adjusted font size for smaller screens */
+    font-size: 14px;
     font-weight: 300;
   }
 }
