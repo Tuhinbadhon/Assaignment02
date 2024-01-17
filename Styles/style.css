@@ -974,4 +974,51 @@ hr {
   .travel-section h3 {
     font-size: 20px; /* Further reduce font size for smaller screens */
   }
+  /* Footer section */
+  .footer-container {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+  }
+
+  .footer-image a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .footer-image img {
+    width: 40px; /* Adjusted width for smaller screens */
+    height: 45px; /* Adjusted height for smaller screens */
+  }
+
+  .footer-container p {
+    color: #5a5a5d;
+    text-align: center;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    font-weight: 400;
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+  }
+
+  .svg {
+    margin-bottom: 30px; /* Adjusted margin for smaller screens */
+  }
+
+  hr {
+    background: rgba(19, 19, 24, 0.1);
+    margin-bottom: 30px; /* Adjusted margin for smaller screens */
+  }
+
+  .footer-p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    font-weight: 300;
+  }
 }
